@@ -7,6 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "start": "cd Backend && node app.js",
     "backend": "nodemon -r dotenv/config Backend/app.js",
     "frontend": "cd Frontend/money-negotiation && npm install && npm start",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\""
